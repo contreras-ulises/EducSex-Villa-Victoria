@@ -1,0 +1,138 @@
+/* STYLES.CSS - EDUCSEX VILLA VICTORIA */
+
+:root {
+  --primary-green: #059669;
+  --primary-purple: #7c3aed;
+  --primary-blue: #0284c7;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, .brand-title {
+  font-family: 'Outfit', sans-serif;
+}
+
+.fw-extrabold {
+  font-weight: 800;
+}
+
+.text-purple {
+  color: var(--primary-purple) !important;
+}
+
+.bg-purple-subtle {
+  background-color: rgba(124, 58, 237, 0.12) !important;
+}
+
+.border-purple-subtle {
+  border-color: rgba(124, 58, 237, 0.25) !important;
+}
+
+/* Text Gradients */
+.gradient-text-green {
+  background: linear-gradient(135deg, #059669, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-blue {
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-purple {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-icon-box {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #059669, #7c3aed);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+}
+
+.btn-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box-lg {
+  width: 64px;
+  height: 64px;
+}
+
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.myth-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.myth-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06) !important;
+}
+
+/* Chat Drawer Flotante */
+.chat-drawer {
+  position: fixed;
+  bottom: 85px;
+  right: 25px;
+  width: 360px;
+  max-width: calc(100vw - 40px);
+  z-index: 1050;
+  display: none;
+  animation: slideUp 0.3s ease-out;
+}
+
+.chat-drawer.open {
+  display: flex !important;
+}
+
+.fab-chat {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 56px;
+  height: 56px;
+  z-index: 1040;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 768px) {
+  .border-start-md {
+    border-left: 1px solid var(--bs-border-color) !important;
+  }
+}
